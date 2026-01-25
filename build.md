@@ -1,5 +1,5 @@
-YT-Music: 8.37.56  
-YouTube: 20.37.48  
+YT-Music: 8.40.54  
+YouTube: 20.40.45  
 
 Install [MicroG-RE](https://github.com/MorpheApp/MicroG-RE/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach root ReVanced YouTube and YT Music from Play Store  
@@ -7,7 +7,7 @@ Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach root ReVanc
 [pre-morphed](https://github.com/anaelle-dev/pre-morphed)
   
 CLI: MorpheApp/morphe-cli-1.1.0-all.jar  
-Patches: MorpheApp/patches-1.7.0.mpp  
-[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.7.0)
+Patches: MorpheApp/patches-1.8.0.mpp  
+[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.8.0)
 
 CLI: MorpheApp/morphe-cli-1.1.0-all.jar    
