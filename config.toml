@@ -9,7 +9,7 @@ parallel-jobs = 1
 [YouTube]
 enabled = true
 module-prop-name = "youtube-morphe"
-# apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube/"
+apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube/"
 uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
 patches-source = "MorpheApp/morphe-patches"
@@ -25,7 +25,7 @@ patcher-args = """\
 [YT-Music]
 enabled = true
 module-prop-name = "yt-music-morphe"
-# apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube-music/"
+apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube-music/"
 uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
 patches-source = "MorpheApp/morphe-patches"
