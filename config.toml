@@ -1,61 +1,41 @@
-enable-magisk-update = true
+enable-magisk-update = true # set this to false if you do not want to receive updates for the module in magisk app
 parallel-jobs = 1
 
-# ReVanced
+# add 'enabled = false' for not patching a specific app or remove it from the config
+# see https://github.com/j-hc/revanced-magisk-module/blob/main/CONFIG.md for more detailed explanations
+
+# you can use rvmm-config-gen to generate a config
+
 [YouTube]
+enabled = true
+module-prop-name = "youtube-morphe"
+github-release-dlurl = "https://github.com/AzyrRuthless/YTYTM-APK/releases/latest"
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube/"
 uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
+patches-source = "MorpheApp/morphe-patches"
+cli-source = "MorpheApp/morphe-cli"
 build-mode = "both"
-patcher-args = "-e 'Theme' -OdarkThemeBackgroundColor=@android:color/black"
+rv-brand = "Morphe"
+patcher-args = """\
+  -e 'Custom branding' -OcustomName='YouTube' -OcustomIcon=assets/youtube/icon \
+  -e 'Change header' -Ocustom=assets/youtube/header \
+  -e 'Theme' -OdarkThemeBackgroundColor=@android:color/black -OlightThemeBackgroundColor=@android:color/white \
+  """
 
 [YT-Music]
+enabled = true
+module-prop-name = "yt-music-morphe"
+github-release-dlurl = "https://github.com/AzyrRuthless/YTYTM-APK/releases/latest"
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube-music/"
 uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
-arch = "arm64-v8a"
-build-mode = "both"
-
-# ReVanced Extended by anddea
-[YouTube-anddea]
-app-name = "YouTube"
-apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube/"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
-patches-source = "anddea/revanced-patches"
-cli-source = "inotia00/revanced-cli"
-rv-brand = "ReVanced anddea"
-build-mode = "both"
-excluded-patches = "'Custom Shorts action buttons' 'Force player buttons background'"
-patcher-args = "-e 'Theme' -OdarkThemeBackgroundColor=@android:color/black"
-
-[YT-Music-anddea]
-app-name = "YT Music"
-apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube-music/"
-uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
-patches-source = "anddea/revanced-patches"
-cli-source = "inotia00/revanced-cli"
-rv-brand = "ReVanced anddea"
-arch = "arm64-v8a"
-build-mode = "both"
-included-patches = "'Disable music video in album' 'Hide player overlay filter'"
-patcher-args = "-e 'Dark theme' -OdarkThemeBackgroundColor=@android:color/black"
-
-# Morphe
-[YouTube-Morphe]
-app-name = "YouTube"
-apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube/"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 patches-source = "MorpheApp/morphe-patches"
 cli-source = "MorpheApp/morphe-cli"
-rv-brand = "Morphe"
-build-mode = "both"
-
-[YT-Music-Morphe]
-app-name = "YT Music"
-apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube-music/"
-github-release-dlurl = "https://github.com/AzyrRuthless/YTYTM-APK/releases/latest"
-patches-source = "MorpheApp/morphe-patches"
-cli-source = "MorpheApp/morphe-cli"
-rv-brand = "Morphe"
 arch = "arm64-v8a"
 build-mode = "both"
+rv-brand = "Morphe"
+patcher-args = """\
+-e 'Custom branding' -OcustomName='YT Music' -OcustomIcon=assets/yt-music/icon \
+-e 'Theme' -OdarkThemeBackgroundColor=@android:color/black \
+"""
