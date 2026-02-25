@@ -1,6 +1,6 @@
 {
-  "version": "8.40.54 (patches 1.14.0.mpp)",
-  "versionCode": 2,
-  "zipUrl": "https://github.com/anaelle-dev/pre-morphed/releases/download/2/yt-music-morphe-magisk-v8.40.54-arm64-v8a.zip",
+  "version": "8.40.54 (patches 1.15.0.mpp)",
+  "versionCode": 3,
+  "zipUrl": "https://github.com/anaelle-dev/pre-morphed/releases/download/3/yt-music-morphe-magisk-v8.40.54-arm64-v8a.zip",
   "changelog": "https://raw.githubusercontent.com/anaelle-dev/pre-morphed/update/build.md"
 }
