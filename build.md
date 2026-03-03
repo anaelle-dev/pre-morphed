@@ -5,5 +5,5 @@ Install [Morphe MicroG-RE](https://github.com/MorpheApp/MicroG-RE) for non-root 
 (Optional) Use [zygisk-detach](https://github.com/j-hc/zygisk-detach/releases/latest) to detach root Morphe YouTube and YouTube Music from the Play Store
   
 CLI: MorpheApp/morphe-cli-1.4.0-all.jar  
-Patches: MorpheApp/patches-1.15.0.mpp  
-[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.15.0)  
+Patches: MorpheApp/patches-1.16.0.mpp  
+[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.16.0)  
