@@ -1,6 +1,6 @@
 {
-  "version": "20.45.36 (patches 1.23.0.mpp)",
-  "versionCode": 12,
-  "zipUrl": "https://github.com/anaelle-dev/pre-morphed/releases/download/12/youtube-morphe-module-v20.45.36-all.zip",
+  "version": "20.47.62 (patches 1.24.0.mpp)",
+  "versionCode": 13,
+  "zipUrl": "https://github.com/anaelle-dev/pre-morphed/releases/download/13/youtube-morphe-module-v20.47.62-all.zip",
   "changelog": "https://raw.githubusercontent.com/anaelle-dev/pre-morphed/update/build.md"
 }
